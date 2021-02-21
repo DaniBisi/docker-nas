@@ -7,8 +7,8 @@ services:
       - 7878:7878
     volumes:
       - /home/dockeras/radarr:/config
-      - /mnt/downloads:/downloads
-      - /mnt/synomovies:/movies
+      - /mnt/nas/downloads:/downloads
+      - /mnt/nas/tv_series:/movies
     environment:
       - PUID=1000
       - PGID=150
@@ -74,7 +74,7 @@ services:
       - WEBUI_PORT=8081
     volumes:
       - /home/dockeras/qbittorent/config:/config
-      - /mnt/nas/tv_series:/downloads
+      - /mnt/nas/downloads:/downloads
     ports:
       - 6881:6881
       - 6881:6881/udp
