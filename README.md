@@ -7,3 +7,7 @@ https://www.amd.com/en/support/previous-drivers/graphics/amd-radeon-2nd-generati
 
 with command
 ./amdgpu-install --no-dkms
+
+
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
